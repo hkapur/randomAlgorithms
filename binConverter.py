@@ -10,17 +10,17 @@ class binConverter:
     def __init__(self,binaryNum):
         self.binaryNum = binaryNum
     def binToDecimal(self,base =10):
-        n = len(binaryNum)
+        n = len(self.binaryNum)
         decimal= 0
         for i in range(n-1,-1,-1):
-            decimal+=(2**(n-1-i))*int(binaryNum[i])
+            decimal+=(2**(n-1-i))*int(self.binaryNum[i])
         return decimal,base
     def binToHexadecimal(self,base=16):
-        m = len(binaryNum)
+        m = len(self.binaryNum)
         if m%4!=0:
-            filledBin = '0'*(4-m%4)+binaryNum
+            filledBin = '0'*(4-m%4)+self.binaryNum
         else:
-            filledBin = binaryNum
+            filledBin = self.binaryNum
         n = len(filledBin)
         HexNum = ''
         hexTable = {'0000':0,'0001':1,'0010':2,'0011':3,'0100':4,'0101':5,'0110':6,'0111':7,'1000':8,'1001':9,'1010':'A','1011':'B','1100':'C','1101':'D','1110':'E','1111':'F'}
@@ -29,11 +29,11 @@ class binConverter:
             HexNum+=str(x)
         return HexNum,base
     def binToOctal(self,base = 8):
-        m = len(binaryNum)
+        m = len(self.binaryNum)
         if m%3!=0:
-            filledBin = '0'*(3-m%3)+binaryNum
+            filledBin = '0'*(3-m%3)+self.binaryNum
         else:
-            filledBin = binaryNum
+            filledBin = self.binaryNum
         n = len(filledBin)
         Octal = ''
         octalTable = {'000':0,'001':1,'010':2,'011':3,'100':4,'101':5,'110':6,'111':7}
