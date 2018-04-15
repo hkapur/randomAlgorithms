@@ -25,7 +25,7 @@ def fib(i):
         return fib(i-1)+fib(i-2)
 
 #Bottom-Up Algorithm (Definitely can work with more "n")
-# Worst case O(n) with Auxillary Space O(n); Space Complexity O(1)
+# Worst case O(n) with Auxillary Space O(n); Space Complexity O(n)
 
 
 def Fib(n):
