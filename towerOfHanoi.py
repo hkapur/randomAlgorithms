@@ -1,7 +1,7 @@
 # Tower Of Hanoi Mathematical game
 # n circular discs of decreasing diameters stacked on one of 3 verticle pegs
 # towerOfHanoi(n) outputs the minimum number of movements required to transfer the entire tower to another peg
-# worst-case time complexity: O(n); Auxillary Space: O(n); Space complexity: O(1)
+# worst-case time complexity: O(n); Auxillary Space: O(n); Space complexity: O(n)
 # Memoization method
 
 def towerOfHanoi(n):
