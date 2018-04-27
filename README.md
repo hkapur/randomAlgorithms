@@ -34,3 +34,10 @@ def powerSets(a,n)
 def towerOfHanoi(n)
 def recurseTowerOfHanoi(n)
 ```
+
+# strassenAlgorithm.py
+*Functions include:*
+```python 
+def strassenAlg(A,B)
+```
+
